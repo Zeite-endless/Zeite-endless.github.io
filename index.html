@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Inscrição em Evento</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        header,
+        .hero,
+        .features,
+        footer {
+            position: relative;
+            z-index: 2;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin-bottom: 40px;
+            color: #ddd;
+        }
+
+        .hero button {
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .hero button:hover {
+            background-color: #4338ca;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            padding: 60px 40px;
+            background: white;
+        }
+
+        .feature-card {
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+        }
+
+        footer {
+            background: #111827;
+            color: #d1d5db;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay muted loop id="background-video">
+        <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+    </video>
+
+    <header>
+        <div class="logo">Eventify</div>
+        <nav>
+            <a href="#features">Por que se inscrever?</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Inscreva-se no seu próximo grande evento</h1>
+        <p>Junte-se a centenas de participantes e tenha uma experiência de inscrição simples e rápida. De conferências a
+            workshops, tornamos tudo mais fácil para você.</p>
+        <a href="/event_registration.html" style="text-decoration: none;">
+            <button>Inscreva-se agora</button>
+        </a>
+    </section>
+
+    <section class="features" id="features">
+        <div class="feature-card">
+            <h3>Inscrição fácil</h3>
+            <p>Cadastre-se rapidamente para qualquer evento usando nossa interface intuitiva.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Confirmação imediata</h3>
+            <p>Receba a confirmação e os detalhes do evento instantaneamente no seu e-mail.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Diversos tipos de eventos</h3>
+            <p>Compatível com conferências, webinars, encontros e muito mais.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        &copy; 2025 Eventify. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
