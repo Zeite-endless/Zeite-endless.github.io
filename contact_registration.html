@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Inscrição</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf0cb;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header,
+        .hero,
+        .features,
+        footer {
+            position: relative;
+            z-index: 2;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 40px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            color: #333;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        main {
+            flex: 1;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        #form-fill {
+            background-color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #111827;
+            color: #d1d5db;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Eventify</div>
+        <nav>
+            <a href="#features">Por que se inscrever?</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+       <div
+        id="form-fill"
+        data-form-id='2ad8cd21-854b-f011-877b-002248df8e9e'
+        data-form-api-url='https://public-sam.mkt.dynamics.com/api/v1.0/orgs/6105c1af-8bcd-ed11-aed0-6045bd3ad0e2/landingpageforms'
+        data-cached-form-url='https://assets-sam.mkt.dynamics.com/6105c1af-8bcd-ed11-aed0-6045bd3ad0e2/digitalassets/forms/2ad8cd21-854b-f011-877b-002248df8e9e' ></div>
+        <script src = 'https://cxppusa1formui01cdnsa01-endpoint.azureedge.net/sam/FormLoader/FormLoader.bundle.js' ></script>
+    </main>
+
+    <footer>
+        &copy; 2025 Eventify. Todos os direitos reservados.
+    </footer>
+</body>
+
+</html>
